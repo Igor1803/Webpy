@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Dream</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet>
+    <style>
+        /* Сохраняем предыдущие стили и добавляем новые */
+        .section-title {
+            font-size: 2.5rem;
+            color: #0077be;
+            text-align: center;
+            margin: 40px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        .card-column {
+            padding: 15px;
+        }
+        @media (max-width: 768px) {
+            .carousel-item img {
+                height: 300px;
+            }
+            .card {
+                margin: 10px auto;
+                max-width: 90%;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Шапка сайта -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#" style="font-family: 'Pacifico', cursive; color: #0077be !important; font-size: 28px;">Ocean Dream</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Туры</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Основной контент -->
+<main class="container mt-5 pt-5">
+
+    <!-- Секция 1: Слайдер -->
+    <section class="mb-5">
+        <h2 class="section-title">Наши лучшие предложения</h2>
+        <div id="mainCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="1.png" class="d-block w-100" alt="Пляж">
+                </div>
+                <div class="carousel-item">
+                    <img src="2.png" class="d-block w-100" alt="Закат">
+                </div>
+                <div class="carousel-item">
+                    <img src="3.png" class="d-block w-100" alt="Отель">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#mainCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#mainCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Секция 2: Карточки -->
+    <section class="mb-5">
+        <h2 class="section-title">Наши услуги</h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12 card-column">
+                <div class="card">
+                    <img src="4.png" class="card-img-top" alt="Сёрфинг">
+                    <div class="card-body">
+                        <h5 class="card-title">Школа сёрфинга</h5>
+                        <p class="card-text">Профессиональное обучение для всех уровней подготовки</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 card-column">
+                <div class="card">
+                    <img src="5.png" class="card-img-top" alt="Дайвинг">
+                    <div class="card-body">
+                        <h5 class="card-title">Подводный дайвинг</h5>
+                        <p class="card-text">Исследуйте красоты морского дна с опытными гидами</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 card-column">
+                <div class="card">
+                    <img src="6.png" class="card-img-top" alt="Яхта">
+                    <div class="card-body">
+                        <h5 class="card-title">Яхтинг</h5>
+                        <p class="card-text">Эксклюзивные прогулки на частных яхтах</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция 3: Аккордеон -->
+    <section class="mb-5">
+        <h2 class="section-title">Частые вопросы</h2>
+        <div class="accordion" id="faqAccordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h3 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne">
+                            📅 Как забронировать тур?
+                        </button>
+                    </h3>
+                </div>
+                <div id="collapseOne" class="collapse show" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Вы можете оставить заявку через наш сайт или связаться с нами по телефону.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h3 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo">
+                            💰 Что включено в стоимость?
+                        </button>
+                    </h3>
+                </div>
+                <div id="collapseTwo" class="collapse" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Проживание, питание, трансферы и экскурсии по программе.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h3 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree">
+                            ❓ Можно ли с детьми?
+                        </button>
+                    </h3>
+                </div>
+                <div id="collapseThree" class="collapse" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Да, у нас есть специальные семейные программы и няни.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Футер -->
+<footer class="bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <h5>Контакты</h5>
+                <p>📞 +7 (999) 123-45-67<br>
+                📍 г. Морской, ул. Пляжная, 1<br>
+                ✉️ info@oceandream.ru</p>
+            </div>
+            <div class="col-md-6">
+                <h5>Социальные сети</h5>
+                <a href="#" class="text-white mr-3"><i class="fab fa-vk fa-2x"></i></a>
+                <a href="#" class="text-white mr-3"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-youtube fa-2x"></i></a>
+            </div>
+        </div>
+        <div class="text-center mt-3">
+            <small>© 2025 Ocean Dream. Все права защищены</small>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
