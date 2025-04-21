@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Случайные цитаты</title>
+    <!-- Bootstrap для стилизации -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .quote-card {
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h1 class="mb-4">Случайная цитата</h1>
+        <div class="quote-card">
+            <blockquote class="blockquote">
+                <p class="mb-0">{{ quote }}</p>
+                <footer class="blockquote-footer mt-3">{{ author }}</footer>
+            </blockquote>
+            <button onclick="window.location.reload()" class="btn btn-primary mt-3">
+                Обновить цитату
+            </button>
+        </div>
+    </div>
+</body>
+</html>
